@@ -10,7 +10,7 @@ function HomeContent() {
     <>
       {/* content 1 - frontpage */}
       <div
-        className="content-1-bg"
+        className="content-1-bg container-fluid"
         style={{
           display: "flex",
           alignItems: "center",
@@ -218,7 +218,9 @@ function HomeContent() {
           width: "100%",
           background: "transparent",
           margin: "48px 0",
+          height: "100vh",
         }}
+        className="container-fluid"
       >
         <div
           style={{
@@ -226,7 +228,7 @@ function HomeContent() {
             flexDirection: "row",
             background: "#fff",
             borderRadius: "18px",
-            boxShadow: "0 2px 32px rgba(55,125,255,0.10)",
+            boxShadow: "0 2px 32px rgba(55,125,255,0.1  0)",
             padding: "2.5rem 2.5rem",
             maxWidth: "1000px",
             width: "100%",
@@ -249,6 +251,8 @@ function HomeContent() {
                 borderRadius: "14px",
                 boxShadow: "0 2px 16px rgba(162,89,255,0.10)",
                 paddingRight: "2rem",
+                border: "0.3px solid #0000002f",
+                backgroundPosition: "center",
               }}
             />
             <div
@@ -272,8 +276,9 @@ function HomeContent() {
                   bottom: "30px",
                   zIndex: 12,
                   width: "20vw",
+                  boxShadow: "0 2px 32px rgba(0, 0, 0, 0.31)",
                 }}
-                className="col"
+                className="col-md-auto border-top rounded"
               >
                 <a
                   href="https://facebook.com/"
@@ -393,7 +398,7 @@ function HomeContent() {
       </div>
       {/* content 2 - Languages */}
 
-      <div>
+      <div className="container ">
         <h2>Development Stacks</h2>
         <p>
           With 1 year of hands-on experience, I've worked with a variety of

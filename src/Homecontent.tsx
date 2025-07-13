@@ -396,120 +396,167 @@ function HomeContent() {
           </div>
         </div>
       </div>
-      {/* content 2 - Languages */}
+      {/* content 3 - Languages */}
 
-      <div className="container ">
-        <h2>Development Stacks</h2>
-        <p>
-          With 1 year of hands-on experience, I've worked with a variety of
-          development tools and technologies to build responsive, user-friendly
-          web applications and designs. My stack includes:
-        </p>
-        <ul style={{ listStyle: "none", padding: 0 }}>
-          <li
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginBottom: "0.5rem",
-            }}
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-              alt="Typescript"
-              width={24}
-              height={24}
-              style={{ marginRight: "0.5rem" }}
-            />
-            <strong>Typescript</strong>
-            <span style={{ marginLeft: "0.5rem" }}>
-              Writing safer, more maintainable code with static typing.
-            </span>
-          </li>
-          <li
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginBottom: "0.5rem",
-            }}
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-              alt="HTML5"
-              width={24}
-              height={24}
-              style={{ marginRight: "0.5rem" }}
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-              alt="CSS3"
-              width={24}
-              height={24}
-              style={{ marginRight: "0.5rem" }}
-            />
-            <strong>HTML &amp; CSS</strong>
-            <span style={{ marginLeft: "0.5rem" }}>
-              Used to structure clean and semantic web content.
-            </span>
-          </li>
-          <li
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginBottom: "0.5rem",
-            }}
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              alt="Node.js"
-              width={24}
-              height={24}
-              style={{ marginRight: "0.5rem" }}
-            />
-            <strong>Node.JS</strong>
-            <span style={{ marginLeft: "0.5rem" }}>
-              Handling backend logic and creating RESTful APIs.
-            </span>
-          </li>
-          <li
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginBottom: "0.5rem",
-            }}
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt="React"
-              width={24}
-              height={24}
-              style={{ marginRight: "0.5rem" }}
-            />
-            <strong>React</strong>
-            <span style={{ marginLeft: "0.5rem" }}>
-              Building component-based user interfaces efficiently.
-            </span>
-          </li>
-          <li
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginBottom: "0.5rem",
-            }}
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              alt="Javascript"
-              width={24}
-              height={24}
-              style={{ marginRight: "0.5rem" }}
-            />
-            <strong>Javascript</strong>
-            <span style={{ marginLeft: "0.5rem" }}>
-              Core language for dynamic, interactive frontend functionality.
-            </span>
-          </li>
-        </ul>
+      <div className="container py-5">
+        <div className="row">
+          {/* LEFT: Text content */}
+          <div className="col-md-5 mb-4">
+            <h2 className="fw-bold mb-3">Development Stacks</h2>
+            <p>
+              With 1 year of hands-on experience, I've worked with a variety of
+              development tools and technologies to build responsive,
+              user-friendly web applications and designs. My stack includes:
+            </p>
+            <p className="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              purus arcu, varius eget velit non.
+            </p>
+          </div>
+
+          {/* RIGHT: Cards layout */}
+          <div className="col-md-7">
+            <div className="row">
+              {/* Left: Typescript card */}
+              <div className="col-md-4 d-flex justify-content-center align-items-start mb-3">
+                <div
+                  style={{
+                    background: "#fff",
+                    padding: "24px",
+                    borderRadius: "16px",
+                    boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
+                    width: "100%",
+                    maxWidth: "220px",
+                  }}
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                    alt="TypeScript"
+                    width="32"
+                    className="mb-3"
+                  />
+                  <h6 className="fw-semibold mb-1">Typescript</h6>
+                  <p className="text-muted small m-0">
+                    Writing safer, more maintainable code with static typing.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right: 2x2 card grid */}
+              <div className="col-md-8">
+                <div className="row g-3">
+                  {/* HTML & CSS */}
+                  <div className="col-sm-6">
+                    <div
+                      style={{
+                        background: "#fff",
+                        padding: "24px",
+                        borderRadius: "16px",
+                        boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
+                        height: "100%",
+                      }}
+                    >
+                      <div className="d-flex gap-2 mb-2">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                          alt="HTML5"
+                          width="24"
+                        />
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                          alt="CSS3"
+                          width="24"
+                        />
+                      </div>
+                      <h6 className="fw-semibold mb-1">1. HTML & CSS</h6>
+                      <p className="text-muted small m-0">
+                        Used to structure clean and semantic web content.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Node.js */}
+                  <div className="col-sm-6">
+                    <div
+                      style={{
+                        background: "#fff",
+                        padding: "24px",
+                        borderRadius: "16px",
+                        boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
+                        height: "100%",
+                      }}
+                    >
+                      <div className="mb-2">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                          alt="Node.js"
+                          width="24"
+                        />
+                      </div>
+                      <h6 className="fw-semibold mb-1">2. Node.JS</h6>
+                      <p className="text-muted small m-0">
+                        Handling backend logic and creating RESTful APIs.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* React */}
+                  <div className="col-sm-6">
+                    <div
+                      style={{
+                        background: "#fff",
+                        padding: "24px",
+                        borderRadius: "16px",
+                        boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
+                        height: "100%",
+                      }}
+                    >
+                      <div className="mb-2">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                          alt="React"
+                          width="24"
+                        />
+                      </div>
+                      <h6 className="fw-semibold mb-1">3. React</h6>
+                      <p className="text-muted small m-0">
+                        Building component-based user interfaces efficiently.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Javascript */}
+                  <div className="col-sm-6">
+                    <div
+                      style={{
+                        background: "#fff",
+                        padding: "24px",
+                        borderRadius: "16px",
+                        boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
+                        height: "100%",
+                      }}
+                    >
+                      <div className="mb-2">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                          alt="Javascript"
+                          width="24"
+                        />
+                      </div>
+                      <h6 className="fw-semibold mb-1">4. Javascript</h6>
+                      <p className="text-muted small m-0">
+                        Core language for dynamic, interactive frontend
+                        functionality.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div className="row">
         <p>Recent Project</p>
         <p>

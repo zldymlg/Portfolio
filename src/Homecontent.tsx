@@ -228,7 +228,7 @@ function HomeContent() {
             flexDirection: "row",
             background: "#fff",
             borderRadius: "18px",
-            boxShadow: "0 2px 32px rgba(55,125,255,0.1  0)",
+            boxShadow: "0 2px 32px rgba(55,125,255,0.10)",
             padding: "2.5rem 2.5rem",
             maxWidth: "1000px",
             width: "100%",
@@ -418,7 +418,7 @@ function HomeContent() {
           <div className="col-md-7">
             <div className="row">
               {/* Left: Typescript card */}
-              <div className="col-md-4 d-flex justify-content-center align-items-start mb-3">
+              <div className="col-md-4 d-flex justify-content-center align-items-center mb-3 ">
                 <div
                   style={{
                     background: "#fff",
@@ -558,11 +558,14 @@ function HomeContent() {
       </div>
 
       <div className="row">
-        <p>Recent Project</p>
-        <p>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration.
-        </p>
+        <div className="container d-flex flex-column align-items-center text-center">
+          <h2 className="text-center">Recent Project</h2>
+          <p className="w-100 w-md-50">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration.
+          </p>
+        </div>
+
         <div className="col">
           {/* Add here the project description and most project */}
           <div className="card" style={{ width: "18rem" }}>
